@@ -1,0 +1,13 @@
+h1 span{font-size:11px;float:right;}
+h1 span span{font-weight:600;}
+#chat,
+#user_list       {display:inline-block;position:relative;height:400px;margin: 0; padding: 0;overflow:auto;}
+#chat            { border:2px solid red; /*position:absolute; top:60px;bottom:60px; left:auto;right:auto;*/ width:450px;}
+#messages        { margin: 0; padding: 0; position: absolute; top:0; right: 0; bottom: 33px;left: 0px;border:1px solid #efefef; }
+#chat-buttons    { background: #fff;               border:0px solid red; margin: 0;position: absolute; bottom: 0; right:0; left:0; height:32px;}
+#chat-message    { background: #fff;               border:0px solid red; margin: 0;position: absolute; top:0px; bottom: 0px; right:200px; left:0px; height:30px;outline:none;}
+#chat-btn-send-nostr { background: rgb(130, 224, 255); border: none;         margin: 0;position: absolute; top:0px; bottom: 0px; right:80px; width:40px; }
+#chat-btn-send   { background: rgb(130, 224, 255); border: none;         margin: 0;position: absolute; top:0px; bottom: 0px; right:40px; width:40px; }
+#chat-btn-connect{ background: rgb(130, 224, 255); border: none;         margin: 0;position: absolute; top:0px; bottom: 0px; right: 0px; width:40px;}
+#user_list{border:2px solid green;width:330px;}
+#chat #messages{ overflow-y:scroll;  overflow-x:hidden; padding: 0px;}
