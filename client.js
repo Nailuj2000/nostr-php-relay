@@ -1,4 +1,12 @@
-    var ws; 
+
+  /* 
+   * * * * * * * *
+   *
+   *  Web socket client, with Nostr code from https://github.com/supertestnet/vanilla-js-nostr
+   *   
+   * * */
+
+   var ws; 
   
     function computeRawPrivkey( node ) {
         return bitcoinjs.ECPair.fromPrivateKey( node.privateKey, { network: bitcoinjs.networks.mainnet } );
