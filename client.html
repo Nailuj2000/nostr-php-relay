@@ -1,29 +1,44 @@
+<!DOCTYPE html>
+<html>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://bitcoincore.tech/apps/bitcoinjs-ui/lib/bitcoinjs-lib.js"></script>
-<script src="https://bundle.run/bip39@3.0.4"></script>
-<script src="https://bundle.run/bip32@2.0.6"></script>
-<script src="https://bundle.run/buffer@6.0.3"></script>
-<script src="https://bundle.run/noble-secp256k1@1.2.14"></script>
-<script src="https://bundle.run/browserify-cipher@1.0.1"></script>
+    <head>
 
-<h1>Notsr websocket chat room <span> <span id="user_num">0</span>users online: </span></h1>
+        <meta charset="UTF-8">
+        <title>Nostr Client</title>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://bitcoincore.tech/apps/bitcoinjs-ui/lib/bitcoinjs-lib.js"></script>
+        <script src="https://bundle.run/bip39@3.0.4"></script>
+        <script src="https://bundle.run/bip32@2.0.6"></script>
+        <script src="https://bundle.run/buffer@6.0.3"></script>
+        <script src="https://bundle.run/noble-secp256k1@1.2.14"></script>
+        <script src="https://bundle.run/browserify-cipher@1.0.1"></script>
 
-<div id="chat">
-    <div id="messages"></div>
-    <div id="chat-buttons">
-        <input  id="chat-message" autocomplete="off" />
-        <button id="chat-btn-send"><i class="fa fa-send"></i></button>
-        <button id="chat-btn-connect"><i class="fa fa-power-off"></i></button>
-    </div>
-</div>
-<div id="user_list"></div>
+    </head>
 
-<script src="client.js"></script>
+    <body>
+  
+        <h1>Notsr websocket chat room <span> <span id="user_num">0</span>users online: </span></h1>
 
-<script>
-    var uname        =  prompt('please enter user name', 'user'+(Math.random()+'').split('.')[1]);
-    var host         = 'wss://nostr.[YOUR_DOMAIN.TLD]/relay
-    var privKey      = '[YOUR_PRIVATE_KEY]'; 
-    var pubKey       = '[YOUR_PUBLIC_KEY]';
-</script>
+        <div id="chat">
+            <div id="messages"></div>
+            <div id="chat-buttons">
+                <input  id="chat-message" autocomplete="off" />
+                <button id="chat-btn-send"><i class="fa fa-send"></i></button>
+                <button id="chat-btn-connect"><i class="fa fa-power-off"></i></button>
+            </div>
+        </div>
+        <div id="user_list"></div>
+
+        <script src="client.js"></script>
+
+        <script>
+            var uname        =  prompt('please enter user name', 'user'+(Math.random()+'').split('.')[1]);
+            var host         = 'wss://nostr.[YOUR_DOMAIN.TLD]/relay
+            var privKey      = '[YOUR_PRIVATE_KEY]'; 
+            var pubKey       = '[YOUR_PUBLIC_KEY]';
+        </script>
+
+    </body>
+
+</html>
