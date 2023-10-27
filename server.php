@@ -1,14 +1,4 @@
 <?php
-/* * * *
- *
- * This is a chat server from Flynsarmy modified to act a Nostr relay server
- *  
- * https://www.flynsarmy.com/2012/02/php-websocket-chat-application-2-0/
- *
- * Contact me in Nostr telegram channel if you want to connect to a running
- * instance. 
- *
- * * * * */
 
 set_time_limit(0);    // prevent the server from timing out
 
