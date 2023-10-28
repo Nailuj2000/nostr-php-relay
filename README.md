@@ -8,4 +8,4 @@ PHP Relay written in PHP
   
   The Nostr part of the client is from github.com/supertestnet/vanilla-js-nostr.   
   
-  Contact me in Nostr telegram channel if you want to connect to a running instance. 
+ 
