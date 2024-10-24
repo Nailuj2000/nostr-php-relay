@@ -12,7 +12,12 @@ set_time_limit(0);    // prevent the server from timing out
  *  Configuración DNS:
  *    Zona A : nostr.<domain.tld>.	3600	A	<server_ip>
  *
- *  Configuración Apache
+ * >DirectAdmin 
+ *   > Configuraciones Httpd Personalizadas
+ *     > Personalizaciones del Httpd.conf para nostr.<domain.tl>
+ * (Solamente agregue las pocas lineas del VirtualHost que necesita.
+ * No agregue todo un <Virtualhost>..</VirtualHost>)
+ *
  *    SSLProxyEngine On
  *    ProxyRequests Off
  *    ProxyPreserveHost Off
